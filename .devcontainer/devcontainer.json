@@ -1,0 +1,18 @@
+{
+    "name": "Catlearn-GPU",
+    "build": {
+      "dockerfile": "Dockerfile"
+    },
+    "runArgs": ["--gpus", "all", "--mount", "source=pytorch_dataset,target=/workspaces/catlearn-gpu/Dataset"],
+    "customizations": {
+        "vscode": {
+          "extensions": [
+            "ms-python.python",
+            "ms-python.vscode-pylance",
+            "ms-azuretools.vscode-docker",
+            "ms-toolsai.jupyter",
+            "grapecity.gc-excelviewer"
+            ]
+        }
+      }
+}

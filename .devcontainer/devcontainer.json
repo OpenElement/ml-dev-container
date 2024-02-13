@@ -1,9 +1,9 @@
 {
-    "name": "Catlearn-GPU",
+    "name": "Machine Learning Dev Container",
     "build": {
       "dockerfile": "Dockerfile"
     },
-    "runArgs": ["--gpus", "all", "--mount", "source=pytorch_dataset,target=/workspaces/catlearn-gpu/Dataset"],
+    "runArgs": ["--gpus", "all", "--mount", "source=dataset,target=/workspaces/ml-dev-container/dataset"],
     "customizations": {
         "vscode": {
           "extensions": [
